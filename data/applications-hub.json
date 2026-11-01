@@ -1,0 +1,2022 @@
+[
+  {
+    "id": "cput",
+    "abbr": "CPUT",
+    "name": "Cape Peninsula University of Technology",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: application and date sourced; fee/residence/campus details need verification",
+    "source": {
+      "url": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.cput.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+        "status": "verified",
+        "note": "Official “Apply to Study” page for the 2027 intake (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.cput.ac.za/students/financial-aid",
+        "status": "review",
+        "note": "The CPUT website blocked PATHWAY’s automated check — confirm this page yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.cput.ac.za/study-at-cput/student-housing",
+        "status": "review",
+        "note": "The CPUT website blocked PATHWAY’s automated check — confirm this page yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Cape Town",
+      "Bellville",
+      "Wellington",
+      "Mowbray",
+      "Granger Bay",
+      "Athlone"
+    ],
+    "campusNotes": [
+      "Athlone: confirm current teaching-site status"
+    ],
+    "campusStatus": "review",
+    "timing": "2027 cycle opened 11 May 2026; many undergraduate programmes close 30 Sep 2026, with earlier programme-specific deadlines.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-05-11",
+        "label": "Applications open",
+        "status": "verified",
+        "note": "Official page: “Applications for the 2027 intake opens Monday, 11 May 2026.”"
+      },
+      {
+        "kind": "close",
+        "date": "2026-09-30",
+        "label": "Many undergraduate programmes close",
+        "status": "partial",
+        "note": "The official page lists a closing date per programme (some close earlier, e.g. Nursing on 30 June 2026). Check your programme on the official page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "No application fee is stated on the official Apply to Study page. Confirm on the CPUT website — don’t assume it is free.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page for intake; don't assume no fee.",
+    "cao": {
+      "uses": null,
+      "status": "na",
+      "note": "The official application page does not mention the CAO."
+    },
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "cut",
+    "abbr": "CUT",
+    "name": "Central University of Technology",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: application/date sourced; fee and residence direct page need verification",
+    "source": {
+      "url": "https://www.cut.ac.za/application-process/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.cut.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.cut.ac.za/application-process/",
+        "status": "verified",
+        "note": "Official CUT application page with steps, documents and fee information (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.cut.ac.za/financial-aid/",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Bloemfontein",
+      "Welkom"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 cycle opened April 2026; undergraduate and most listed programmes close 30 Sep 2026; research master's/doctoral dates differ.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Closing date",
+        "status": "review",
+        "note": "The workbook says the 2027 cycle opened April 2026 and most programmes close 30 September 2026, but the official page currently reads “Open: April 2027 | Closes: 30 September 2027” for the 2027 intake. These conflict, so PATHWAY does not show a deadline. Research master’s/doctoral dates differ."
+      }
+    ],
+    "fee": {
+      "status": "verified",
+      "items": [
+        {
+          "category": "All applicants",
+          "amount": "No application fee currently",
+          "status": "verified"
+        }
+      ],
+      "note": "Official page: “there is currently no application fee.” CUT warns applicants never to pay individuals."
+    },
+    "workbookFee": "Fee: verify on official application process page.",
+    "cao": {
+      "uses": null,
+      "status": "na",
+      "note": "The official application page does not mention the CAO."
+    },
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "mut",
+    "abbr": "MUT",
+    "name": "Mangosuthu University of Technology",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.mut.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.mut.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.mut.ac.za/prospective-students/apply/",
+        "status": "verified",
+        "note": "Found on MUT’s official homepage and opened on 11 Oct 2026 (the workbook only gave the homepage).",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.mut.ac.za/fees-and-funding/bursaries/",
+        "status": "partial",
+        "note": "Linked from MUT’s official homepage as “Bursaries”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.mut.ac.za/student-housing/",
+        "status": "partial",
+        "note": "Linked from MUT’s official homepage as “Student Housing”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "Scholarships",
+        "url": "https://www.mut.ac.za/prospective-students/study-at-mut/scholarships/",
+        "kind": "funding",
+        "status": "partial",
+        "note": "Linked from MUT’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Umlazi (main campus)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical cycle often opens in the first half of the year and closes around Sep; confirm current intake and CAO route.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "partial",
+        "note": "MUT’s apply page says “Applications open in January and close on 30 September with late applications accepted until 30 November”, but gives no year — confirm for your intake. Faculties list their own dates."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "MUT’s apply page mentions “a single application fee” paid through the CAO, and late applications “accumulate a fee determined by the CAO”. No amount is stated.",
+      "payTo": "Central Applications Office (CAO)",
+      "items": []
+    },
+    "workbookFee": "Fee: verify; applications may use the CAO and fee can be charged by CAO.",
+    "cao": {
+      "uses": true,
+      "status": "verified",
+      "note": "MUT’s official apply page: “All first-year applications to study at MUT are submitted through the Central Applications Office (CAO).”"
+    },
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "vut",
+    "abbr": "VUT",
+    "name": "Vaal University of Technology",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.vut.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.vut.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://vut.ac.za/how-to-apply/",
+        "status": "verified",
+        "note": "Found on VUT’s official homepage (“Apply for 2027”) and opened on 11 Oct 2026.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://vut.ac.za/financial-aid-bursaries/",
+        "status": "partial",
+        "note": "Linked from VUT’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://vut.ac.za/accommodation/",
+        "status": "partial",
+        "note": "Linked from VUT’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "Check application status",
+        "url": "https://statuscheck.vut.ac.za/",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from VUT’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Vanderbijlpark",
+      "Ekurhuleni",
+      "Secunda",
+      "Upington"
+    ],
+    "campusNotes": [
+      "Upington: verify current programme availability"
+    ],
+    "campusStatus": "review",
+    "timing": "Typical cycle commonly opens mid-year and closes around Sep; confirm current intake and programme deadlines.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-05-21",
+        "label": "Applications open",
+        "status": "partial",
+        "note": "VUT’s How to apply page says applications for 2027 “will open on 21 May 2026”."
+      },
+      {
+        "kind": "close",
+        "date": "2026-10-30",
+        "label": "National applicants close",
+        "status": "partial",
+        "note": "The same page gives 30 October 2026 for national applicants and 30 September 2026 for international applicants, but a banner on the page says academic applications close 30 September. These conflict — confirm with VUT. Some programmes closed on 31 July 2026."
+      },
+      {
+        "kind": "resClose",
+        "date": "2026-10-31",
+        "label": "Residence applications close",
+        "status": "partial",
+        "note": "From a banner on VUT’s How to apply page (“Residences: 31 October”), year not stated in the banner."
+      }
+    ],
+    "fee": {
+      "status": "verified",
+      "items": [
+        {
+          "category": "All applicants",
+          "amount": "R110",
+          "status": "verified"
+        }
+      ],
+      "note": "Official page: “Application fee for all applicants is R110”, paid on the application portal.",
+      "payTo": "VUT, on its online application portal"
+    },
+    "workbookFee": "Fee: verify on official application page.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "dut",
+    "abbr": "DUT",
+    "name": "Durban University of Technology",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.dut.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.dut.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://onlineapps.dut.ac.za/",
+        "status": "partial",
+        "note": "Linked from DUT’s official homepage as “Online Applications Form”; the portal itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.dut.ac.za/support_services/financial_aid/",
+        "status": "partial",
+        "note": "Linked from DUT’s official homepage as “Financial Aid and Scholarships”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [
+      {
+        "label": "How to apply for 2027 (PDF)",
+        "url": "https://www.dut.ac.za/wp-content/uploads/2026/06/How-to-Apply-2027.pdf",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from DUT’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Durban: Steve Biko",
+      "ML Sultan",
+      "Ritson",
+      "Brickfield",
+      "City",
+      "Indumiso (Pietermaritzburg)",
+      "Riverside (Pietermaritzburg)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Many programmes use the CAO; typical closing period is around 30 Sep, but programme deadlines vary.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing period",
+        "status": "review",
+        "note": "Workbook: many programmes use the CAO and typically close around 30 September, but programme deadlines vary. Not yet confirmed on an official page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify the CAO fee and any DUT-specific charges for the intake.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify CAO fee and any DUT-specific charges for the intake.",
+    "cao": {
+      "uses": null,
+      "status": "partial",
+      "note": "The workbook says many DUT programmes use the CAO, and DUT’s homepage links to the CAO’s application-status page. Check which route applies to your programme."
+    },
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "tut",
+    "abbr": "TUT",
+    "name": "Tshwane University of Technology",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.tut.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.tut.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://applications-prod.tut.ac.za/",
+        "status": "partial",
+        "note": "Linked from TUT’s official homepage as “Apply Now”; the portal itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.tut.ac.za/financial-aid/",
+        "status": "partial",
+        "note": "Linked from TUT’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.tut.ac.za/accommodation/",
+        "status": "partial",
+        "note": "Linked from TUT’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "Programme closing dates",
+        "url": "https://www.tut.ac.za/programme-closing-dates/",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from TUT’s official homepage."
+      },
+      {
+        "label": "Undergraduate funding",
+        "url": "https://www.tut.ac.za/student-finance/undergraduate/",
+        "kind": "funding",
+        "status": "partial",
+        "note": "Linked from TUT’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Pretoria",
+      "Ga-Rankuwa",
+      "Soshanguve South",
+      "Soshanguve North",
+      "eMalahleni",
+      "Mbombela",
+      "Polokwane"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical application window opens around April; many 2027 programmes close 30 Sep 2026, but exceptions apply.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: applications typically open around April and many 2027 programmes close 30 September 2026, with exceptions. Not yet confirmed — use TUT’s programme closing dates page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify the current official fee and applicant category.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify current official fee and applicant category.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "smu",
+    "abbr": "SMU",
+    "name": "Sefako Makgatho Health Sciences University",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official application dates sourced; fee needs official confirmation",
+    "source": {
+      "url": "https://www.smu.ac.za/students/apply/online-application/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.smu.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.smu.ac.za/students/apply/online-application/",
+        "status": "verified",
+        "note": "Official SMU online application page (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.smu.ac.za/students/financial-aid/",
+        "status": "partial",
+        "note": "Linked from SMU’s official homepage as “Financial Aid”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.smu.ac.za/students/student-affairs/residence-and-catering/",
+        "status": "partial",
+        "note": "Linked from SMU’s official homepage as “Student Residences”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Ga-Rankuwa (single main campus)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 applications opened 1 Apr 2026; undergraduate deadline listed as 31 Jul 2026.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-04-01",
+        "label": "Applications open (all programmes)",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-07-31",
+        "label": "Undergraduate applications close",
+        "status": "verified",
+        "note": "Official page: “Friday, 31st July 2026 for undergraduate programmes”."
+      }
+    ],
+    "fee": {
+      "status": "verified",
+      "items": [
+        {
+          "category": "All applicants",
+          "amount": "R300",
+          "status": "verified"
+        }
+      ],
+      "refundable": false,
+      "payTo": "Sefako Makgatho Health Sciences University (bank details on the official page)",
+      "note": "Official page: “non-refundable application fee of R300.00”. Applying for both undergraduate and postgraduate study needs only one fee."
+    },
+    "workbookFee": "R300 reported for 2027 applications; verify on official portal before publishing.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": {
+      "text": "SMU’s application page says residence places are limited and awarded on a first-come, first-served basis.",
+      "status": "verified"
+    }
+  },
+  {
+    "id": "spu",
+    "abbr": "SPU",
+    "name": "Sol Plaatje University",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.spu.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.spu.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.spu.ac.za/index.php/how-to-apply/",
+        "status": "partial",
+        "note": "Linked from SPU’s official homepage as “How to apply”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.spu.ac.za/index.php/financial-aid/",
+        "status": "partial",
+        "note": "Linked from SPU’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Kimberley (urban campus across multiple sites)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical 2027 cycle opened around April; common closing period 30 Sep 2026; confirm programme-specific deadlines.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: the 2027 cycle opened around April with a common closing date of 30 September 2026. Not yet confirmed on an official page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application page.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "ump",
+    "abbr": "UMP",
+    "name": "University of Mpumalanga",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official application dates and fee sourced; residence/campus direct pages need verification",
+    "source": {
+      "url": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.ump.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+        "status": "verified",
+        "note": "Official UMP online applications page (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.ump.ac.za/Study-with-us/Student-Funding.aspx",
+        "status": "partial",
+        "note": "Linked from UMP’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.ump.ac.za/Student-Life/Student-Housing.aspx",
+        "status": "partial",
+        "note": "Linked from UMP’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "On-campus accommodation",
+        "url": "https://www.ump.ac.za/Student-Life/Student-Housing/On-Campus-Accommodation.aspx",
+        "kind": "residence",
+        "status": "partial",
+        "note": "Linked from UMP’s official homepage."
+      },
+      {
+        "label": "Accredited private accommodation",
+        "url": "https://www.ump.ac.za/Student-Life/Student-Housing/Accredited-Private-Accommodation.aspx",
+        "kind": "private",
+        "status": "partial",
+        "note": "Linked from UMP’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Mbombela",
+      "Siyabuswa"
+    ],
+    "campusNotes": [
+      "Other teaching sites/programme locations should be confirmed from the university."
+    ],
+    "campusStatus": "review",
+    "timing": "2027 applications opened 1 Jun 2026; undergraduate closing date listed as 30 Nov 2026.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-06-01",
+        "label": "Applications open",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-11-30",
+        "label": "Undergraduate applications close",
+        "status": "verified",
+        "note": "Official page: “Undergraduate Programmes: 30 November 2026”."
+      }
+    ],
+    "fee": {
+      "status": "verified",
+      "items": [
+        {
+          "category": "South African applicants",
+          "amount": "R200",
+          "status": "verified"
+        },
+        {
+          "category": "SADC applicants",
+          "amount": "R400",
+          "status": "verified"
+        },
+        {
+          "category": "Other international applicants",
+          "amount": "R550",
+          "status": "verified"
+        }
+      ],
+      "refundable": false,
+      "note": "Official page: “non-refundable application fee (RSA) R200, (SADC) 400 and International students other than SADC (R550)”."
+    },
+    "workbookFee": "2027 application fee listed: RSA R200; SADC R400; other international R550.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": {
+      "text": "UMP’s online application guide says you add a residence application inside the same portal (“Add New Residence Application”) — it is a separate step from your academic application.",
+      "status": "verified"
+    }
+  },
+  {
+    "id": "wsu",
+    "abbr": "WSU",
+    "name": "Walter Sisulu University",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee/campus detail need confirmation",
+    "source": {
+      "url": "https://www.wsu.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.wsu.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://applications.wsu.ac.za/",
+        "status": "partial",
+        "note": "Linked from WSU’s official homepage as “Apply Now”; the portal itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.wsu.ac.za/en/study-with-us/fees-financial-support",
+        "status": "partial",
+        "note": "Linked from WSU’s official homepage; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.wsu.ac.za/en/study-with-us/undergraduate-programmes/new-students/student-accommodation",
+        "status": "partial",
+        "note": "Linked from WSU’s official homepage (new undergraduate students); the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "How to apply: the process",
+        "url": "https://www.wsu.ac.za/index.php/en/study-with-us/application-and-registration/how-to-apply-the-process",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from WSU’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Mthatha",
+      "Buffalo City/East London",
+      "Butterworth",
+      "Komani/Queenstown"
+    ],
+    "campusNotes": [
+      "Komani/Queenstown: verify current campus names and programmes"
+    ],
+    "campusStatus": "review",
+    "timing": "Typical application period often opens in the first half of the year and closes around Sep; verify current intake and faculty exceptions.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing period",
+        "status": "review",
+        "note": "Workbook: often opens in the first half of the year and closes around September. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application page.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "univen",
+    "abbr": "UNIVEN",
+    "name": "University of Venda",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.univen.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.univen.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      },
+      "funding": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Thohoyandou (main campus)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical cycle often closes around 30 Sep; verify current application opening and any programme exceptions.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: often closes around 30 September. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application page.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "ul",
+    "abbr": "UL",
+    "name": "University of Limpopo",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.ul.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.ul.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://ulc-prod-webserver.ul.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP",
+        "status": "partial",
+        "note": "Linked from UL’s official homepage as “APPLY ONLINE”; the portal itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.ul.ac.za/admissions/undergraduate-studies/financial-support/",
+        "status": "partial",
+        "note": "Linked from UL’s official homepage as “Financial Support”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Turfloop",
+      "Medunsa campus"
+    ],
+    "campusNotes": [
+      "Medunsa campus: health-sciences programmes, confirm current institutional arrangements"
+    ],
+    "campusStatus": "review",
+    "timing": "Typical cycle often opens around April and closes around Sep; programme exceptions apply.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing period",
+        "status": "review",
+        "note": "Workbook: often opens around April and closes around September; programme exceptions apply. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: third-party summaries report different fees by applicant category — confirm the official amount.",
+      "items": []
+    },
+    "workbookFee": "Fee: published third-party summaries report different fees by applicant category; confirm official amount before use.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "uwc",
+    "abbr": "UWC",
+    "name": "University of the Western Cape",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: residence cycle sourced; academic dates/fee need confirmation",
+    "source": {
+      "url": "https://www.uwc.ac.za/admission-and-financial-aid/apply/residential-applications",
+      "status": "review"
+    },
+    "website": {
+      "url": "https://www.uwc.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      },
+      "funding": {
+        "url": "https://www.uwc.ac.za/admission-and-financial-aid",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.uwc.ac.za/admission-and-financial-aid/apply/residential-applications",
+        "status": "verified",
+        "note": "Official UWC Residential Services page (opened 11 Oct 2026). Applications go through the Residence Portal.",
+        "from": "workbook"
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Bellville (main campus)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 residence page lists first-year applications opening 1 Apr 2026 and residence applications closing 31 Oct 2026; academic application deadlines vary by programme.",
+    "dates": [
+      {
+        "kind": "resOpen",
+        "date": "2026-04-01",
+        "label": "First-year residence applications open",
+        "status": "verified",
+        "note": "Official residence page."
+      },
+      {
+        "kind": "resClose",
+        "date": "2026-10-31",
+        "label": "Residence applications close",
+        "status": "verified",
+        "note": "Official residence page. Allocation happens in January 2027; move-in in February 2027."
+      },
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Academic closing dates",
+        "status": "review",
+        "note": "Workbook: academic application deadlines vary by programme. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application page; do not assume it is free.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page; do not assume fee-free.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "ru",
+    "abbr": "Rhodes",
+    "name": "Rhodes University",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.ru.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.ru.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://ross.ru.ac.za/ugadmissions",
+        "status": "partial",
+        "note": "Linked from Rhodes’ official homepage as “Apply Online”; the portal itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://www.ru.ac.za/studentfeesandfinancialaid/",
+        "status": "partial",
+        "note": "Linked from Rhodes’ official homepage as “Fees and Financial Aid”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://www.ru.ac.za/residences/",
+        "status": "partial",
+        "note": "Linked from Rhodes’ official homepage as “Halls and Residences”; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "Admissions gateway",
+        "url": "https://www.ru.ac.za/admissiongateway/",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from Rhodes’ official homepage."
+      },
+      {
+        "label": "Oppidan (students living off campus)",
+        "url": "https://www.ru.ac.za/oppidan/",
+        "kind": "private",
+        "status": "partial",
+        "note": "Linked from Rhodes’ official homepage."
+      }
+    ],
+    "campuses": [
+      "Makhanda (main campus)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical undergraduate cycle opens around April and closes around 30 Sep; confirm current cycle and selected programme dates.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: typically opens around April and closes around 30 September. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "items": [
+        {
+          "category": "Applicants (category not stated)",
+          "amount": "R100 reported",
+          "status": "review"
+        }
+      ],
+      "note": "Workbook: R100 reported for 2027 applications — not yet confirmed on an official page."
+    },
+    "workbookFee": "R100 reported for 2027 applications; verify official current fee and exemptions.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "nmu",
+    "abbr": "NMU",
+    "name": "Nelson Mandela University",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: likely official section URLs; confirm page availability and fee/date exceptions",
+    "source": {
+      "url": "https://www.mandela.ac.za/Study-at-Mandela/Applications",
+      "status": "review"
+    },
+    "website": {
+      "url": "https://www.mandela.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.mandela.ac.za/Study-at-Mandela/Application",
+        "status": "verified",
+        "note": "NMU’s official “Step 2: Application” page, linked from the homepage and opened on 11 Oct 2026. It links to online applications, closing dates, accommodation and funding.",
+        "from": "official site",
+        "workbook": {
+          "url": "https://www.mandela.ac.za/Study-at-Mandela/Applications",
+          "status": "review",
+          "note": "The workbook’s link (…/Study-at-Mandela/Applications) did not load during PATHWAY’s check; NMU’s homepage links to …/Application instead."
+        }
+      },
+      "funding": {
+        "url": "https://www.mandela.ac.za/Study-at-Mandela/Fees-and-Funding",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.mandela.ac.za/Study-at-Mandela/Accommodation",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [
+      {
+        "label": "Online application portal",
+        "url": "https://applyonline.mandela.ac.za/",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from NMU’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Gqeberha: South Campus",
+      "North Campus",
+      "Second Avenue Campus",
+      "Bird Street Campus",
+      "George Campus"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical 2027 cycle opened 1 Apr 2026; many undergraduate programmes close 30 Sep 2026, with earlier exceptions possible.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: the 2027 cycle opened 1 April 2026 and many undergraduate programmes close 30 September 2026, with earlier exceptions. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application page for your applicant category.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page for applicant category.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "unisa",
+    "abbr": "UNISA",
+    "name": "University of South Africa",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official dates and fee sourced; accommodation is not a standard residence-campus model",
+    "source": {
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.unisa.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+        "status": "verified",
+        "note": "Official Unisa undergraduate qualifications page (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Student-fees-and-funding-your-studies",
+        "status": "verified",
+        "note": "Official Unisa “Student fees and funding your studies” page (opened 11 Oct 2026). It covers bursaries and loans; the page was last modified in July 2025.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [],
+    "campusNotes": [
+      "Primarily distance/online; regional service centres are not equivalent to residential campuses."
+    ],
+    "campusStatus": "review",
+    "timing": "2027 undergraduate applications: 17 Aug–9 Oct 2026 (official page).",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-08-17",
+        "label": "Undergraduate applications open",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-10-09",
+        "label": "Undergraduate applications close",
+        "status": "verified",
+        "note": "Official page: “between 17 August and 9 October 2026”."
+      }
+    ],
+    "fee": {
+      "status": "partial",
+      "items": [
+        {
+          "category": "First-time applicants",
+          "amount": "R160 (from workbook)",
+          "status": "review"
+        }
+      ],
+      "refundable": false,
+      "note": "Unisa’s official fees page confirms the application fee is non-refundable but PATHWAY could not see the amount there. The workbook reports R160 — confirm it on Unisa’s site."
+    },
+    "workbookFee": "R160 non-refundable online application fee for first-time applicants, according to official 2027 information.",
+    "cao": null,
+    "residenceModel": "distance",
+    "resNote": null
+  },
+  {
+    "id": "nwu",
+    "abbr": "NWU",
+    "name": "North-West University",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.nwu.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.nwu.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      },
+      "funding": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Potchefstroom",
+      "Mahikeng",
+      "Vanderbijlpark"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical cycle often opens around June and closes around 31 Aug; verify faculty-specific dates and current intake.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: typically opens around June and closes around 31 August. PATHWAY’s programme data for NWU lists a different opening date, so this needs confirming."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official application portal; fee policies can differ by applicant category.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application portal; fee policies can differ by applicant category.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "uj",
+    "abbr": "UJ",
+    "name": "University of Johannesburg",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official admissions section URL; dates/fee/residence direct links need confirmation",
+    "source": {
+      "url": "https://www.uj.ac.za/admission-aid/undergraduate/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.uj.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.uj.ac.za/admission-aid/undergraduate/",
+        "status": "verified",
+        "note": "Official UJ undergraduate admissions page (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.uj.ac.za/admission-aid/",
+        "status": "partial",
+        "note": "UJ’s official Admissions + Aid page (opened 11 Oct 2026). It links to Student Finance rather than describing funding itself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": null,
+        "status": "na",
+        "note": "The workbook gave only the university’s homepage here. PATHWAY does not substitute the homepage for a dedicated page.",
+        "from": null
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Auckland Park Kingsway",
+      "Auckland Park Bunting Road",
+      "Doornfontein",
+      "Soweto"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical cycle opens around April and often closes around 31 Oct, but selected programmes may close earlier.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-04-01",
+        "label": "Undergraduate applications open",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-10-31",
+        "label": "Undergraduate applications close (12:00)",
+        "status": "verified",
+        "note": "Official page: “Close: 31 October 2026 @ 12:00”. The page does not label the intake year in words."
+      },
+      {
+        "kind": "resOpen",
+        "date": "2026-04-01",
+        "label": "Student accommodation applications open",
+        "status": "verified",
+        "note": "Official Admissions + Aid page — first-time entering applicants only."
+      },
+      {
+        "kind": "resClose",
+        "date": "2026-10-31",
+        "label": "Student accommodation applications close (12:00)",
+        "status": "verified",
+        "note": "Official Admissions + Aid page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "No fee is stated on UJ’s undergraduate page. Workbook: verify on the official application page and applicant category.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official application page and applicant category.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "wits",
+    "abbr": "Wits",
+    "name": "University of the Witwatersrand",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official dates/residence dates sourced; fee needs official confirmation",
+    "source": {
+      "url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.wits.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+        "status": "verified",
+        "note": "Official “Apply to Wits” page (opened 11 Oct 2026). It currently says applications for the 2027 intake have closed.",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.wits.ac.za/students/financial-aid-and-scholarships/",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.wits.ac.za/accommodation/applications/",
+        "status": "verified",
+        "note": "Official Wits residence applications page (opened 11 Oct 2026). Applications are made online through the Student Self-Service portal.",
+        "from": "workbook"
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Braamfontein (main campus cluster)",
+      "Wits Education Campus",
+      "Parktown",
+      "Medical School"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 undergraduate applications: most programmes closed 30 Sep 2026; selected Health Sciences, Architecture, Audiology, Speech-Language Pathology and Film/TV closed 30 Jun 2026. Residence applications opened 1 Apr and closed 30 Sep 2026.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": "2026-06-30",
+        "label": "Health Sciences, Architecture, Audiology, Speech-Language Pathology and Film & TV closed",
+        "status": "verified",
+        "note": "Official Apply to Wits page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-09-30",
+        "label": "All other undergraduate programmes closed",
+        "status": "verified",
+        "note": "Official Apply to Wits page."
+      },
+      {
+        "kind": "resOpen",
+        "date": "2026-04-01",
+        "label": "Residence applications open",
+        "status": "partial",
+        "note": "The Apply to Wits page says 1 April 2026; the residence page says 17 April (no year). Confirm with Wits."
+      },
+      {
+        "kind": "resClose",
+        "date": "2026-09-30",
+        "label": "Residence applications close",
+        "status": "verified",
+        "note": "Official Apply to Wits page and residence page."
+      }
+    ],
+    "fee": {
+      "status": "partial",
+      "items": [
+        {
+          "category": "Applicants (category not stated)",
+          "amount": "R100",
+          "status": "verified"
+        },
+        {
+          "category": "International applicants",
+          "amount": "R700 reported",
+          "status": "review"
+        }
+      ],
+      "payTo": "Wits application fee account (details on the official page)",
+      "note": "Official page: “An application fee of R100 is required.” It does not say whether this differs for international applicants — the workbook’s R700 figure is not confirmed. Refundability is not stated."
+    },
+    "workbookFee": "R100 reported for SA applicants and R700 for international applicants; confirm official page before publishing.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": {
+      "text": "The Wits residence page says new students pay an initial instalment of R5 000 towards annual residence fees once placed (page refers to its 2026 policy).",
+      "status": "partial"
+    }
+  },
+  {
+    "id": "su",
+    "abbr": "Stellenbosch",
+    "name": "Stellenbosch University",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: direct official section URLs should be checked; dates/fee need official confirmation",
+    "source": {
+      "url": "https://www.sun.ac.za/english/maties/apply",
+      "status": "review"
+    },
+    "website": {
+      "url": "https://www.sun.ac.za/english",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.sun.ac.za/english/maties/apply",
+        "status": "review",
+        "note": "Stellenbosch’s website blocked PATHWAY’s automated check — confirm this page yourself.",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.sun.ac.za/english/maties/fees",
+        "status": "partial",
+        "note": "Official SU fees page (opened 11 Oct 2026). It covers study and residence fees and payment, not bursaries in detail.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.sun.ac.za/english/maties/accommodation",
+        "status": "review",
+        "note": "Stellenbosch’s website blocked PATHWAY’s automated check — confirm this page yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Stellenbosch",
+      "Tygerberg",
+      "Bellville Park (programme-specific)",
+      "Saldanha (selected programmes)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Typical 2027 undergraduate cycle opened 1 Apr and many programmes close 31 Jul 2026; check faculty/programme exceptions.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: the 2027 undergraduate cycle opened 1 April and many programmes close 31 July 2026, with faculty exceptions. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "items": [
+        {
+          "category": "Applicants (category not stated)",
+          "amount": "R100 reported",
+          "status": "review"
+        }
+      ],
+      "note": "Workbook: R100 reported; applicants from quintile 1–4 schools may be exempt according to a third-party summary. Not confirmed — check SU’s official terms."
+    },
+    "workbookFee": "R100 reported for applications; SA applicants from quintile 1–4 schools may be exempt according to third-party 2027 summary; verify official terms.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "uct",
+    "abbr": "UCT",
+    "name": "University of Cape Town",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official dates/fees sourced; residence/campus details should be checked",
+    "source": {
+      "url": "https://www.uct.ac.za/students/applications/key-dates",
+      "status": "review"
+    },
+    "website": {
+      "url": "https://www.uct.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.uct.ac.za/students/applications-apply-undergraduate-qualifications",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself. UCT’s homepage links to the online application portal below.",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.uct.ac.za/students/fees-funding",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.uct.ac.za/students/housing",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [
+      {
+        "label": "Online application portal",
+        "url": "https://applyonline.uct.ac.za",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from UCT’s official homepage."
+      },
+      {
+        "label": "Key dates",
+        "url": "https://www.uct.ac.za/students/applications/key-dates",
+        "kind": "apply",
+        "status": "verified",
+        "note": "Official key dates page (opened 11 Oct 2026)."
+      },
+      {
+        "label": "Student financial aid",
+        "url": "https://uct.ac.za/dsa/student-financial-aid",
+        "kind": "funding",
+        "status": "partial",
+        "note": "Linked from UCT’s official homepage."
+      },
+      {
+        "label": "Campus life: housing",
+        "url": "https://uct.ac.za/campus-life/housing",
+        "kind": "residence",
+        "status": "partial",
+        "note": "Linked from UCT’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Upper Campus",
+      "Middle Campus",
+      "Lower Campus",
+      "Hiddingh",
+      "Health Sciences campus (Observatory)",
+      "Breakwater (programme/site-specific)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 undergraduate applications opened 1 Apr 2026 and closed 31 Jul 2026; no late applications stated on official key-dates page.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-04-01",
+        "label": "Applications open for the 2027 admission cycle",
+        "status": "verified",
+        "note": "Official key dates page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-07-31",
+        "label": "Undergraduate applications close (no late applications)",
+        "status": "verified",
+        "note": "Official key dates page: “We do not consider late application requests.”"
+      },
+      {
+        "kind": "resClose",
+        "date": "2026-07-31",
+        "label": "Undergraduate housing applications close",
+        "status": "verified",
+        "note": "Official key dates page."
+      }
+    ],
+    "fee": {
+      "status": "partial",
+      "items": [
+        {
+          "category": "South African and SADC applicants",
+          "amount": "R100",
+          "status": "partial"
+        },
+        {
+          "category": "Applicants from outside SADC",
+          "amount": "R300",
+          "status": "partial"
+        }
+      ],
+      "note": "From the workbook, which cites UCT’s official application procedure. PATHWAY could not open that page to confirm."
+    },
+    "workbookFee": "R100 for SA/SADC applicants; R300 for applicants outside SADC, per official application procedure.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "ukzn",
+    "abbr": "UKZN",
+    "name": "University of KwaZulu-Natal",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Official homepage only—direct links/date/fee need confirmation",
+    "source": {
+      "url": "https://www.ukzn.ac.za/",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.ukzn.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://applications.ukzn.ac.za/",
+        "status": "partial",
+        "note": "Linked from UKZN’s official homepage as “How to apply” (it also covers financial aid and accommodation); the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "funding": {
+        "url": "https://applications.ukzn.ac.za/",
+        "status": "partial",
+        "note": "UKZN’s homepage links “Financial Aid” to its applications site; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      },
+      "residence": {
+        "url": "https://applications.ukzn.ac.za/",
+        "status": "partial",
+        "note": "UKZN’s homepage links “Accommodation” to its applications site; the page itself was not opened.",
+        "from": "official site",
+        "workbook": null
+      }
+    },
+    "extra": [
+      {
+        "label": "2027 online applications",
+        "url": "https://ww1.applications.ukzn.ac.za/",
+        "kind": "apply",
+        "status": "partial",
+        "note": "Linked from UKZN’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Howard College",
+      "Westville",
+      "Pietermaritzburg",
+      "Edgewood",
+      "Medical School (Durban)"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "Many programmes use a cycle that closes around 30 Sep; some programmes have earlier deadlines. Confirm official dates and whether the programme is through CAO.",
+    "dates": [
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: many programmes close around 30 September, with earlier deadlines for some. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify the CAO or university fee for your applicant category.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify CAO or university fee for applicant category.",
+    "cao": {
+      "uses": null,
+      "status": "review",
+      "note": "Workbook: confirm whether your programme is applied for through the CAO."
+    },
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "ufs",
+    "abbr": "UFS",
+    "name": "University of the Free State",
+    "intakeYear": 2027,
+    "status": "review",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: official section links likely; confirm current application dates/fee",
+    "source": {
+      "url": "https://www.ufs.ac.za/prospective",
+      "status": "partial"
+    },
+    "website": {
+      "url": "https://www.ufs.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.ufs.ac.za/prospective",
+        "status": "partial",
+        "note": "UFS’s official Student Recruitment page (opened 11 Oct 2026). It links onward to undergraduate applications and says “2027 online applications open 1 April”.",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.ufs.ac.za/kovsielife/student-finance",
+        "status": "review",
+        "note": "This page loaded but is a general money-management page, not funding or bursary information — confirm UFS’s funding page yourself.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.ufs.ac.za/kovsielife/residences",
+        "status": "review",
+        "note": "The UFS website blocked PATHWAY’s automated check — confirm this page yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [],
+    "campuses": [
+      "Bloemfontein",
+      "Qwaqwa",
+      "South Campus (programme-specific"
+    ],
+    "campusNotes": [
+      "Confirm current offerings)"
+    ],
+    "campusStatus": "review",
+    "timing": "Typical 2027 cycle opened around April and closes around 31 Aug 2026 for many programmes; check programme exceptions.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-04-01",
+        "label": "Online applications open",
+        "status": "partial",
+        "note": "UFS recruitment page: “2027 online applications open 1 April”."
+      },
+      {
+        "kind": "close",
+        "date": null,
+        "label": "Typical closing date",
+        "status": "review",
+        "note": "Workbook: closes around 31 August 2026 for many programmes. Not yet confirmed."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "note": "Workbook: verify on the official prospective-student application page.",
+      "items": []
+    },
+    "workbookFee": "Fee: verify on official prospective-student application page.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": null
+  },
+  {
+    "id": "up",
+    "abbr": "UP",
+    "name": "University of Pretoria",
+    "intakeYear": 2027,
+    "status": "partial",
+    "lastVerified": "2026-10-11",
+    "workbookStatus": "Partial: direct official section links likely; confirm programme dates and fee/exemption",
+    "source": {
+      "url": "https://www.up.ac.za/online-application",
+      "status": "verified"
+    },
+    "website": {
+      "url": "https://www.up.ac.za/",
+      "status": "verified",
+      "note": "Official university website.",
+      "from": "workbook"
+    },
+    "links": {
+      "apply": {
+        "url": "https://www.up.ac.za/online-application",
+        "status": "verified",
+        "note": "Official UP online application page (opened 11 Oct 2026).",
+        "from": "workbook"
+      },
+      "funding": {
+        "url": "https://www.up.ac.za/fees-and-funding",
+        "status": "verified",
+        "note": "Official UP Fees and Funding page (opened 11 Oct 2026) — bursaries, scholarships and loans.",
+        "from": "workbook"
+      },
+      "residence": {
+        "url": "https://www.up.ac.za/residence-affairs",
+        "status": "review",
+        "note": "This page did not load during PATHWAY’s check — confirm it yourself.",
+        "from": "workbook"
+      }
+    },
+    "extra": [
+      {
+        "label": "Student accommodation",
+        "url": "https://www.up.ac.za/student-accommodation",
+        "kind": "residence",
+        "status": "partial",
+        "note": "Linked from UP’s official homepage."
+      }
+    ],
+    "campuses": [
+      "Hatfield",
+      "Onderstepoort",
+      "Prinshof",
+      "Groenkloof",
+      "Mamelodi",
+      "Hillcrest sports campus"
+    ],
+    "campusNotes": [],
+    "campusStatus": "review",
+    "timing": "2027 undergraduate cycle opened 1 Apr 2026; many programme applications closed 30 Jun 2026, with programme-specific differences.",
+    "dates": [
+      {
+        "kind": "open",
+        "date": "2026-04-01",
+        "label": "Applications open for 2027",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-05-31",
+        "label": "Veterinary Science closed",
+        "status": "verified",
+        "note": "Official page."
+      },
+      {
+        "kind": "close",
+        "date": "2026-06-30",
+        "label": "All other undergraduate programmes closed",
+        "status": "verified",
+        "note": "Official page."
+      }
+    ],
+    "fee": {
+      "status": "review",
+      "items": [
+        {
+          "category": "South African applicants",
+          "amount": "R300 reported",
+          "status": "review"
+        }
+      ],
+      "note": "UP’s online application page links to a separate fee page that PATHWAY did not open. Workbook: R300 reported for SA applicants, with a possible exemption for household income ≤ R150 000 — confirm the official terms."
+    },
+    "workbookFee": "R300 reported for SA applicants; possible application-fee exemption for SA applicants with household income ≤R150,000; verify official terms.",
+    "cao": null,
+    "residenceModel": null,
+    "resNote": {
+      "text": "UP’s online application page says you indicate your residence preferences during your online application.",
+      "status": "verified"
+    }
+  }
+]

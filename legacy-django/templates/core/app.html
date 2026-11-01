@@ -1,0 +1,30 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en-ZA" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PATHWAY — Explore • Plan • Build Your Future</title>
+<meta name="description" content="PATHWAY helps Grade 9–12 learners explore study options, plan their subjects, track progress and apply to university.">
+<link rel="icon" href="{% static 'core/img/mark.webp' %}" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  /* Set the theme before first paint so dark mode never flashes white. */
+  try{var t=JSON.parse(localStorage.getItem('pathway.proto.v1')||'{}').theme;if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
+</script>
+<link rel="stylesheet" href="{% static 'core/css/app.css' %}">
+</head>
+<body>
+{% include "core/_shell.html" %}
+
+{{ assets|json_script:"pathway-assets" }}
+{{ bootstrap|json_script:"pathway-bootstrap" }}
+<script id="pathway-csrf" type="application/json">"{{ csrf_token }}"</script>
+
+<script src="{% static 'core/js/boot.js' %}"></script>
+<script src="{% static 'core/js/data/universities.js' %}"></script>
+<script src="{% static 'core/js/app.js' %}"></script>
+<script src="{% static 'core/js/sync.js' %}"></script>
+</body>
+</html>

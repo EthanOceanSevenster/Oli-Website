@@ -63,7 +63,6 @@ public/pathway/
 scripts/
   test-api.ts                The endpoint suite
   pg-wire.ts                 Serves PGlite over the Postgres wire protocol
-legacy-django/               The earlier Django build — safe to delete
 ```
 
 ### What changed in the prototype's own JavaScript

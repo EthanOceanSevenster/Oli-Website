@@ -31,8 +31,3 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Archived Django implementation — delete the folder once you are happy
-legacy-django/.venv/
-legacy-django/db.sqlite3
-legacy-django/**/__pycache__/
-legacy-django/**/*.pyc

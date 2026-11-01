@@ -4,6 +4,7 @@ import { getCurrentLearner } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { progress } from '@/lib/db/schema';
 import { demoEnabled } from '@/lib/demo';
+import { payfastConfig } from '@/lib/payfast';
 
 // The page carries per-learner state, so it is never statically cached.
 export const dynamic = 'force-dynamic';
@@ -37,6 +38,7 @@ function embed(value: unknown): string {
 export default async function Page() {
   const learner = await getCurrentLearner();
   const demo = await demoEnabled();
+  const payfast = payfastConfig();
 
   let bootstrap: { email: string; data: unknown; updatedAt: string } | null = null;
 
@@ -88,6 +90,19 @@ export default async function Page() {
         id="pathway-demo"
         type="application/json"
         dangerouslySetInnerHTML={{ __html: embed(demo) }}
+      />
+      {/*
+        Whether the checkout is real. Without Payfast credentials the
+        prototype's simulated card form stands in, so the site keeps working
+        on an install that cannot take money yet. Merchant credentials stay on
+        the server; only this flag crosses to the browser.
+      */}
+      <script
+        id="pathway-payfast"
+        type="application/json"
+        dangerouslySetInnerHTML={{
+          __html: embed({ enabled: payfast !== null, sandbox: payfast?.sandbox ?? false }),
+        }}
       />
       <script
         id="pathway-bootstrap"

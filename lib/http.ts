@@ -32,6 +32,24 @@ export function requireSameOrigin(request: Request) {
   return sameOrigin(request) ? null : fail('Cross-origin request refused.', 403);
 }
 
+/**
+ * The origin a payment provider should call us back on.
+ *
+ * `request.url` can carry the internal host behind a proxy, and a notify_url
+ * that only resolves inside the platform never gets called. Set PUBLIC_ORIGIN
+ * to pin it; otherwise we trust the forwarded headers the host sets.
+ */
+export function publicOrigin(request: Request): string {
+  const configured = process.env.PUBLIC_ORIGIN?.trim();
+  if (configured) return configured.replace(/\/+$/, '');
+
+  const first = (value: string | null) => value?.split(',')[0]?.trim() ?? '';
+  const host = first(request.headers.get('x-forwarded-host')) || first(request.headers.get('host'));
+  if (!host) return new URL(request.url).origin;
+
+  return `${first(request.headers.get('x-forwarded-proto')) || 'https'}://${host}`;
+}
+
 export async function readJson<T = Record<string, unknown>>(request: Request): Promise<T | null> {
   try {
     const body = await request.json();

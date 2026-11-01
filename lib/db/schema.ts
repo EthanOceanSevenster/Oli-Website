@@ -1,9 +1,11 @@
 import { sql } from 'drizzle-orm';
 import {
+  boolean,
   date,
   index,
   integer,
   jsonb,
+  numeric,
   pgEnum,
   pgTable,
   text,
@@ -14,6 +16,12 @@ import {
 export const gradeEnum = pgEnum('grade', ['9', '10', '11', '12']);
 export const planEnum = pgEnum('plan', ['none', 'monthly', 'annual']);
 export const verificationEnum = pgEnum('verification', ['verified', 'partial', 'review']);
+export const paymentStateEnum = pgEnum('payment_state', [
+  'pending',
+  'complete',
+  'cancelled',
+  'failed',
+]);
 
 /** A learner account. Email is the login; passwords are scrypt hashes. */
 export const learners = pgTable(
@@ -92,7 +100,55 @@ export const universities = pgTable(
   (t) => [index('universities_abbr_idx').on(t.abbr)],
 );
 
+/**
+ * One checkout attempt.
+ *
+ * The row id is what Payfast echoes back as `m_payment_id`, so a notification
+ * is tied to the learner and to the price we actually quoted — never to the
+ * amount or the account the notification itself claims.
+ */
+export const payments = pgTable(
+  'payments',
+  {
+    id: uuid('id').defaultRandom().primaryKey(),
+    learnerId: uuid('learner_id')
+      .notNull()
+      .references(() => learners.id, { onDelete: 'cascade' }),
+    plan: planEnum('plan').notNull(),
+    amount: numeric('amount', { precision: 10, scale: 2 }).notNull(),
+    state: paymentStateEnum('state').notNull().default('pending'),
+    /** True for the monthly plan, which Payfast renews on its own. */
+    recurring: boolean('recurring').notNull().default(false),
+    /** Payfast's subscription id, once a recurring payment has gone through. */
+    token: text('token'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index('payments_learner_idx').on(t.learnerId)],
+);
+
+/**
+ * One ITN from Payfast, kept as a record of why access was granted.
+ *
+ * Payfast's own id is the primary key, and that is what makes the callback
+ * idempotent: Payfast retries a notification until it gets a 200, and a
+ * monthly subscription sends a fresh one every cycle against the same payment.
+ */
+export const paymentEvents = pgTable(
+  'payment_events',
+  {
+    pfPaymentId: text('pf_payment_id').primaryKey(),
+    paymentId: uuid('payment_id').references(() => payments.id, { onDelete: 'set null' }),
+    status: text('status').notNull(),
+    amountGross: numeric('amount_gross', { precision: 10, scale: 2 }),
+    payload: jsonb('payload').notNull().default(sql`'{}'::jsonb`),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index('payment_events_payment_idx').on(t.paymentId)],
+);
+
 export type Learner = typeof learners.$inferSelect;
+export type Payment = typeof payments.$inferSelect;
 export type NewLearner = typeof learners.$inferInsert;
 export type Progress = typeof progress.$inferSelect;
 export type University = typeof universities.$inferSelect;

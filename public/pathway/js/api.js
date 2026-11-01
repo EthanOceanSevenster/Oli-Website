@@ -80,9 +80,22 @@
       return request('/api/progress');
     },
 
-    /** Records the chosen plan. Checkout itself is still simulated. */
+    /** Records the chosen plan. Used by the simulated checkout only. */
     subscribe: function (plan) {
       return request('/api/subscription', { method: 'POST', body: { plan: plan } });
+    },
+
+    /**
+     * Opens a Payfast checkout and returns the signed form to POST there.
+     * 503 means Payfast is not set up, and the caller falls back.
+     */
+    payfastCheckout: function (plan) {
+      return request('/api/payfast/checkout', { method: 'POST', body: { plan: plan } });
+    },
+
+    /** Where a payment got to. Payfast confirms out of band, so this polls. */
+    paymentStatus: function (id) {
+      return request('/api/payfast/status?id=' + encodeURIComponent(id));
     },
 
     /** The message to show when the server could not be reached. */

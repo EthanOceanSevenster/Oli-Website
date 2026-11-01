@@ -1622,6 +1622,8 @@ signup.after = () => {
    PLANS & PAYMENT
    ============================================================ */
 const PLANS = { annual:{label:'Annual', price:199, per:'year', cents:'R199.00'}, monthly:{label:'Monthly', price:20, per:'month', cents:'R20.00'} };
+/* Whether checkout is real. The server decides this, not the browser — see app/page.tsx. */
+const PF = () => window.PATHWAY_PAYFAST || {enabled:false, sandbox:false};
 function plans(){
   return `<div class="page-top">${lockup('#/')}<div style="display:flex;gap:12px;align-items:center">${themeBtn()}<span class="chip">${I('lock')} Secure checkout</span></div></div>
 <div class="plans-wrap">
@@ -1672,9 +1674,38 @@ function pay(){
       ${k==='annual'?`<div class="sumrow"><span>Works out to</span><span>R16.58 per month</span></div>`:''}
       <div class="sumrow total"><span>Total today</span><span>${p.cents}</span></div>
     </div>
-    <div class="notice"><b>Prototype checkout.</b> No real payment is taken. Use a test card such as 4242 4242 4242 4242 with any future expiry date and any 3-digit CVC.</div>
+    ${payNotice()}
   </div>
-  <div class="glass paycard">
+  ${payPanel(k,p)}
+</div>`;
+}
+/* What the learner is told about the checkout depends on what is taking the money. */
+function payNotice(){
+  const pf=PF();
+  if(!pf.enabled) return `<div class="notice"><b>Prototype checkout.</b> No real payment is taken. Use a test card such as 4242 4242 4242 4242 with any future expiry date and any 3-digit CVC.</div>`;
+  if(pf.sandbox) return `<div class="notice"><b>Test mode.</b> This checkout is pointed at Payfast's sandbox, so no real money is taken.</div>`;
+  return '';
+}
+/* The paying half of the checkout: a wait screen if we are back from Payfast
+   and it has not told the server yet, Payfast when it is set up, and the
+   simulated card form when it is not. */
+function payPanel(k,p){
+  const q=new URLSearchParams(location.hash.split('?')[1]||'');
+  if(q.get('pending')) return `<div class="glass paycard">
+    <h2>${I('lock')} Confirming your payment</h2>
+    <p style="margin-top:14px">Payfast is confirming your payment with us. This usually takes a few seconds — you can stay on this page.</p>
+    <p style="margin-top:22px;text-align:center"><span class="spinner"></span></p>
+    <div class="err" id="pf-e"></div>
+  </div>`;
+  if(PF().enabled) return `<div class="glass paycard">
+    <h2>${I('lock')} Secure checkout</h2>
+    <p style="margin-top:14px">You will be taken to Payfast to pay by card, EFT or instant EFT. PATHWAY never sees your card details.</p>
+    ${k==='monthly'?`<p style="margin-top:10px">This sets up a monthly subscription of ${p.cents}. You can cancel it anytime.</p>`:`<p style="margin-top:10px">This is one payment of ${p.cents} for 12 months. Nothing renews automatically.</p>`}
+    <button class="btn btn-gold btn-block" id="paybtn" style="margin-top:24px">Pay ${p.cents} with Payfast ${ARROW}</button>
+    <div class="err" id="pf-e"></div>
+    <p class="hint" style="text-align:center">${I('lock')} Payments are handled by Payfast, a South African payment provider.</p>
+  </div>`;
+  return `<div class="glass paycard">
     <h2>${I('card')} Pay by card</h2>
     <form class="form" id="f" novalidate>
       <div class="field"><label for="cn">Name on card</label><input class="input" id="cn" autocomplete="cc-name" placeholder="As it appears on the card"><div class="err" id="cn-e"></div></div>
@@ -1686,11 +1717,51 @@ function pay(){
       <button class="btn btn-gold btn-block" type="submit" id="paybtn">Pay ${p.cents}</button>
       <p class="hint" style="text-align:center">${I('lock')} Payments will be handled by a trusted South African payment provider.</p>
     </form>
-  </div>
-</div>`;
+  </div>`;
+}
+/* Hands the browser a signed form and lets it post itself to Payfast. The
+   learner leaves the site here; access is granted by the ITN, not by coming back. */
+function payfastStart(k){
+  const btn=document.getElementById('paybtn'); if(!btn) return;
+  const label=`Pay ${PLANS[k].cents} with Payfast ${ARROW}`;
+  btn.addEventListener('click', async ()=>{
+    btn.disabled=true; btn.innerHTML='<span class="spinner"></span> Taking you to Payfast…'; setErr('pf','');
+    const res=await PathwayAPI.payfastCheckout(k);
+    if(!res.ok || !res.data || !res.data.fields){
+      btn.disabled=false; btn.innerHTML=label;
+      setErr('pf', res.offline ? PathwayAPI.offlineMessage : (res.data && res.data.error) || 'We could not start the checkout. Please try again.');
+      return;
+    }
+    const f=document.createElement('form');
+    f.method='POST'; f.action=res.data.action; f.style.display='none';
+    Object.keys(res.data.fields).forEach(name=>{
+      const i=document.createElement('input'); i.type='hidden'; i.name=name; i.value=res.data.fields[name]; f.appendChild(i);
+    });
+    document.body.appendChild(f); f.submit();
+  });
+}
+/* The browser usually beats Payfast's notification home, so wait for the
+   server rather than taking the return trip as proof of payment. */
+function watchPayment(id){
+  let tries=0;
+  const tick=async ()=>{
+    const res=await PathwayAPI.paymentStatus(id);
+    const state=res.ok && res.data ? res.data.state : null;
+    if(state==='complete'){
+      const u=me(); if(u){ u.sub={plan:res.data.plan, paidAt:Date.now()}; save(); }
+      go('#/home'); return;
+    }
+    if(state==='cancelled'||state==='failed'){ go('#/plans?failed=1'); return; }
+    if(++tries>20){ setErr('pf','This is taking longer than usual. If the payment went through it will appear under My Subscription shortly — there is no need to pay again.'); return; }
+    setTimeout(tick, 2000);
+  };
+  tick();
 }
 pay.after = () => {
   const q=new URLSearchParams(location.hash.split('?')[1]||''); const k=q.get('plan')==='monthly'?'monthly':'annual';
+  const pending=q.get('pending');
+  if(pending) return watchPayment(pending);
+  if(PF().enabled) return payfastStart(k);
   const cc=document.getElementById('cc'), ex=document.getElementById('ex'), cv=document.getElementById('cv');
   cc.addEventListener('input',()=>{ const d=cc.value.replace(/\D/g,'').slice(0,19); cc.value=d.replace(/(.{4})/g,'$1 ').trim(); });
   ex.addEventListener('input',e=>{ let d=ex.value.replace(/\D/g,'').slice(0,4); if(d.length>=3) d=d.slice(0,2)+' / '+d.slice(2); ex.value=d; });

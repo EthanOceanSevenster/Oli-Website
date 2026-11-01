@@ -2,7 +2,7 @@
   "name": "pathway",
   "version": "1.0.0",
   "private": true,
-  "description": "PATHWAY — Explore, Plan, Track, Build Your Future",
+  "description": "PATHWAY \u2014 Explore, Plan, Track, Build Your Future",
   "scripts": {
     "dev": "next dev -p 8000",
     "build": "next build",
@@ -13,7 +13,9 @@
     "db:seed": "tsx --env-file-if-exists=.env lib/db/seed.ts",
     "db:setup": "npm run db:migrate && npm run db:seed",
     "test:api": "tsx scripts/test-api.ts",
-    "dev:pg": "tsx scripts/pg-wire.ts"
+    "dev:pg": "tsx scripts/pg-wire.ts",
+    "test:payfast": "tsx scripts/test-payfast.ts",
+    "test:payfast:flow": "tsx scripts/test-payfast-flow.ts"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.13",

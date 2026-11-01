@@ -20,6 +20,9 @@
   /* Demo learners are enabled by the server, never by the browser. */
   window.PATHWAY_DEMO = readJSON('pathway-demo', false) === true;
 
+  /* Whether checkout goes to Payfast or falls back to the simulated card. */
+  window.PATHWAY_PAYFAST = readJSON('pathway-payfast', { enabled: false, sandbox: false });
+
   var server = readJSON('pathway-bootstrap', null);
   if (!server || !server.data) return;
 

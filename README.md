@@ -113,7 +113,12 @@ The scripts are plain `<script defer>` tags, which is exactly the ordering guara
 | `POST` | `/api/auth/logout` | Sign out and revoke the session |
 | `GET` | `/api/auth/me` | The current learner, or `null` |
 | `GET` / `PUT` | `/api/progress` | The learner's state blob |
-| `POST` | `/api/subscription` | Records the chosen plan (checkout itself is still simulated) |
+| `POST` | `/api/subscription` | Records a chosen plan. Used only by the simulated checkout |
+| `POST` | `/api/payfast/checkout` | Opens a Payfast payment and returns the signed form |
+| `POST` | `/api/payfast/notify` | Payfast's ITN callback. The only thing that grants paid access |
+| `GET` | `/api/payfast/return` | Where Payfast sends the learner's browser back to |
+| `GET` | `/api/payfast/status` | Where a payment got to, polled while the callback is in flight |
+| `GET` | `/api/demo-access` | Unlocks the demo learners for one browser |
 | `GET` | `/api/universities` | Directory; `?q=` searches name and acronym, `?verification=` filters |
 | `GET` | `/api/universities/<code>` | One institution with its full record |
 | `GET` | `/api/health` | Liveness plus a real database round trip |
@@ -149,6 +154,12 @@ Set these under **Settings → Environment Variables** (see `.env.example`):
 | --- | --- |
 | `DATABASE_URL` | **Required.** Any Postgres — Vercel Postgres, Neon, Supabase, RDS. Use the **pooled** connection string. |
 | `DATABASE_POOL_MAX` | Optional, defaults to 1. Leave at 1 behind a pooler. |
+| `PAYFAST_MERCHANT_ID` | Payfast merchant id. Unset means checkout stays simulated. |
+| `PAYFAST_MERCHANT_KEY` | Payfast merchant key. |
+| `PAYFAST_PASSPHRASE` | Set it on the Payfast dashboard and copy it exactly. Letters and digits only. Required for the monthly plan. |
+| `PAYFAST_SANDBOX` | `true` points checkout at Payfast's test environment. |
+| `PUBLIC_ORIGIN` | Only if the host's forwarded headers are wrong. |
+| `DEMO_ACCESS_KEY` | Unlocks the demo learners. Unset means no demo accounts. Treat as a password. |
 
 **`DATABASE_URL` is mandatory on Vercel.** The app refuses to start without it rather than appearing to work: PGlite is a single-process database on the local filesystem, and on Vercel that filesystem is read-only apart from `/tmp` and nothing written survives.
 
@@ -192,8 +203,7 @@ Status as imported, unchanged from the handover: **12 partially verified, 12 nee
 
 These are the prototype's, not this stack's, and they still apply:
 
-- **Checkout is simulated.** No money moves. The test card is `4242 4242 4242 4242`. `POST /api/subscription` only records which plan was chosen so access survives a new device — it must not be what grants paid access once real payments exist. Replace the call site with a payment provider's webhook before launch.
-- **Demo accounts are live.** Four demo learners skip payment entirely. Set `SHOW_DEMO_LOGIN = false` near the top of `public/pathway/js/app.js` and remove them before launch.
+- **Checkout needs a Payfast account.** The integration is built and tested — see [docs/PAYMENTS.md](docs/PAYMENTS.md). Until `PAYFAST_MERCHANT_ID` and friends are set it falls back to the prototype's simulated card form (`4242 4242 4242 4242`), which takes no money. `POST /api/subscription` only records a chosen plan and must never be what grants paid access.
 - **Parental consent is not implemented.** PATHWAY collects personal information from children. POPIA compliance needs legal review, and registration likely needs a parent/guardian consent step.
 - **Password reset is not built.** The "Forgot password?" link still says the feature arrives at launch. It needs an email provider.
 - **The UI is still the vanilla prototype**, served from `public/` rather than written as React components. That is deliberate: it is 4,772 lines across ~288 render functions and 43 screens, and it works exactly as handed over. Convert screens to React as you touch them rather than in one pass.

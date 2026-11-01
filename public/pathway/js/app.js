@@ -4,7 +4,11 @@
 const SUPPORT_EMAIL = 'support@pathway.co.za';   // PLACEHOLDER — not shown in the UI; replace with the confirmed support mailbox
 const SUPPORT_ENDPOINT = null;                    // BACKEND — set to the support API URL (POST, JSON) to deliver Support-page requests
 const SUPPORT_TOPICS = ['Account','Subscription','Results','Technical issue','General question'];
-const SHOW_DEMO_LOGIN = true;                     // DEV ONLY — set to false to hide the demo-login button before launch
+/* Demo learners skip payment and their password is in this file, which anyone
+   can read. So the server decides whether they exist at all: unlock a browser
+   by visiting /api/demo-access?key=<DEMO_ACCESS_KEY> once. Off for everybody
+   else — no pill, no #/demo page, no accounts seeded, no sign-in. */
+const SHOW_DEMO_LOGIN = window.PATHWAY_DEMO === true;
 const DEMO_PASSWORD = 'Demo1234';                 // DEV ONLY — shared password for the four demo learners
 const PLAN_FEATURES = {                           // single source of truth for plan wording everywhere in the app
   annual:  ['12 months of access','Full platform access','All features','One payment for the year'],
@@ -165,6 +169,7 @@ function migrateProgress(){
       const st=requestStage(u,d.key); st.status='ready'; st.readyAt=st.requestedAt; st.migrated=true; }); });
 }
 async function seedDemoAccounts(){
+  if (!SHOW_DEMO_LOGIN) return;   /* never create them in a browser the server has not unlocked */
   const pw = await hash(DEMO_PASSWORD);
   DEMO_ACCOUNTS.forEach(d=>{
     const ex = DB.users[d.email];
@@ -963,6 +968,7 @@ const go = h => { if (location.hash===h) render(); else location.hash=h; };
 const LEARNER_ROUTES = ['/plans','/pay','/home','/grade','/subscription','/careers','/careers/view','/pathway-101','/help/faq','/help/support','/what-if','/decision-lab','/after-matric','/my-pathway','/targets/matches','/apply','/apply/uni','/journey','/explore-path','/aps','/aps/add','/aps/improve','/targets','/targets/universities','/targets/courses','/progress','/next','/applications','/deadlines','/profile','/careers/compare','/my-assessment','/assessment/1','/assessment/2','/answers/1','/answers/2','/results','/results/add','/results/grade-8','/results/grade-9','/dna','/dna/stage','/dna/building'];
 function guard(path){
   const u=me();
+  if (path==='/demo' && !SHOW_DEMO_LOGIN) return '#/';   /* the credentials page is not public */
   const authed=LEARNER_ROUTES;
   if (!authed.includes(path)) return null;
   if (!u) return '#/signin';
@@ -1461,9 +1467,10 @@ signin.after = () => {
 
     if(res.ok){ await adoptServerAccount(em, res.data.learner); return; }
 
-    /* Demo learners exist only in this browser and never on the server. */
+    /* Demo learners exist only in this browser and never on the server — and
+       only at all once the server has unlocked demo mode for it. */
     const local = DB.users[em];
-    if(res.status===401 && isDemo(local) && local.pw === await hash(pw)){
+    if(SHOW_DEMO_LOGIN && res.status===401 && isDemo(local) && local.pw === await hash(pw)){
       DB.session=em; save(); go(hasAccess(local)?'#/home':'#/plans'); return;
     }
     if(res.offline) return fail(PathwayAPI.offlineMessage);

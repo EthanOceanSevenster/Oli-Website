@@ -17,6 +17,9 @@
   /* app.js reads these four at load time. */
   window.PATHWAY_ASSETS = readJSON('pathway-assets', {});
 
+  /* Demo learners are enabled by the server, never by the browser. */
+  window.PATHWAY_DEMO = readJSON('pathway-demo', false) === true;
+
   var server = readJSON('pathway-bootstrap', null);
   if (!server || !server.data) return;
 

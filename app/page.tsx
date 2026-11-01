@@ -3,6 +3,7 @@ import { eq } from 'drizzle-orm';
 import { getCurrentLearner } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { progress } from '@/lib/db/schema';
+import { demoEnabled } from '@/lib/demo';
 
 // The page carries per-learner state, so it is never statically cached.
 export const dynamic = 'force-dynamic';
@@ -35,6 +36,7 @@ function embed(value: unknown): string {
 
 export default async function Page() {
   const learner = await getCurrentLearner();
+  const demo = await demoEnabled();
 
   let bootstrap: { email: string; data: unknown; updatedAt: string } | null = null;
 
@@ -76,6 +78,16 @@ export default async function Page() {
         id="pathway-assets"
         type="application/json"
         dangerouslySetInnerHTML={{ __html: embed(ASSETS) }}
+      />
+      {/*
+        Whether demo learners exist is a server decision. Without this flag the
+        prototype never seeds them, never shows the pill, and refuses #/demo —
+        so the credentials sitting in the public bundle lead nowhere.
+      */}
+      <script
+        id="pathway-demo"
+        type="application/json"
+        dangerouslySetInnerHTML={{ __html: embed(demo) }}
       />
       <script
         id="pathway-bootstrap"
